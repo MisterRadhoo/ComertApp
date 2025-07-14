@@ -168,7 +168,7 @@ namespace ComertApp
             string bon = string.Join("\n\n", cosCumparaturi.Select(c => c.GenereazaBonFiscal()));
             MessageBox.Show(bon, "Bon Fiscal", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            //Salvare bonFiscal intr-un fisier.txt; import;
+            //Salvare bonFiscal intr-un fisier.txt; import;;
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Title = "Salveaza bonul fiscal.";
             sfd.Filter = "Fisiere text (*.txt)|*.txt";
